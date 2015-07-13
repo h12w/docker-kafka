@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get install --yes \
         openjdk-7-jre
 
-ADD http://mirror.bit.edu.cn/apache/kafka/${VER}/${TAR} .
+ADD http://apache.claz.org/apache/kafka/${VER}/${TAR} .
 RUN tar -xzf ${TAR} && \
     rm ${TAR} && \
     mv ${K} /opt
