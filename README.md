@@ -1,5 +1,5 @@
-Dockerfile of Kafka
-===================
+Dockerfile of Kafka for Unit Testing
+====================================
 
 Mac OSX:
 
