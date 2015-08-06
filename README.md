@@ -1,14 +1,12 @@
 Dockerfile of Kafka for Unit Testing
 ====================================
 
-Mac OSX:
-
 ```bash
-docker run -d -p 9092:9092 --env=ADVERTISED_HOST=`boot2docker ip` h12w/kafka
-```
-
-Linux:
-
-```bash
-docker run -d -p [port]:[port] h12w/kafka
+docker run --detach=true \
+           --publish=9092:9092 \
+	   --env=KAFKA_DELETE_TOPIC_ENABLE=true \
+	   --env=KAFKA_BROKER_ID=1 \
+	   --env=KAFKA_ADVERTISED_HOST_NAME=r`boot2docker ip` \
+	   --env=KAFKA_ZOOKEEPER_CONNECT=`boot2docker ip` \
+	   h12w/kafka
 ```
