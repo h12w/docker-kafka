@@ -1,7 +1,7 @@
 FROM h12w/jre:latest
 MAINTAINER Hǎiliàng Wáng <w@h12.me>
 
-ADD http://mirrors.163.com/.help/sources.list.jessie /etc/apt/sources.list
+# ADD http://mirrors.163.com/.help/sources.list.jessie /etc/apt/sources.list
 
 RUN apt-get update && \
     apt-get install --yes curl \
