@@ -1,6 +1,8 @@
 Dockerfile of Kafka for Unit Testing
 ====================================
 
+Kafka 0.9.0.0
+
 ```bash
 docker run --detach=true \
            --publish=9092:9092 \
