@@ -1,7 +1,7 @@
 FROM h12w/jre:latest
 MAINTAINER Hǎiliàng Wáng <w@h12.me>
 
-RUN apk add --no-cache jq curl tar bash coreutils
+RUN apk add --no-cache jq curl tar bash coreutils docker.io
 
 ENV VER        0.8.2.2
 ENV SCALA_VER  2.10
