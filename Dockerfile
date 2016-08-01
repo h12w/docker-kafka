@@ -1,4 +1,4 @@
-FROM h12w/jre:latest
+FROM anapsix/alpine-java
 MAINTAINER Hǎiliàng Wáng <w@h12.me>
 
 RUN apk add --no-cache jq curl tar bash coreutils
